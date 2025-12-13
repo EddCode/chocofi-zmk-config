@@ -96,7 +96,7 @@
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
 
             >;
-        }
+        };
 
         // layer 4
         media_layer {
@@ -121,7 +121,7 @@
             bindings = <
         //╭──────────┬────────────┬────────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ RESET    │ PROFILE 0  │ PROFILE 1  │ PROFILE 2│PROFILE 3 │   │          │          │          │          │  RESET   │
-           &sys_reset &bt BT_SEL 0 bt BT_SEL 1 bt BT_SEL 2 bt BT_SEL 3    &trans    &kp C_POWER &kp C_SLEEP  &trans    &sys_reset
+           &sys_reset &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3    &trans    &kp C_POWER &kp C_SLEEP  &trans    &sys_reset
         //╰──────────┴────────────┴────────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //│BOOTLOADER│  PROFILE 4 │ PROFILE 5  │          │          │   │          │          │          │          │BOOTLOADER│
           &bootloader &bt BT_SEL 4 &bt BT_SEL 5  &trans     &trans         &trans     &trans     &trans     &trans    &bootloader
