@@ -1,3 +1,5 @@
+name: Build ZMK User Configuration
+
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
