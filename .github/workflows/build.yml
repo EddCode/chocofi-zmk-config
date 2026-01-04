@@ -1,10 +1,6 @@
 name: Build ZMK User Configuration
 
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
