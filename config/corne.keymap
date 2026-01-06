@@ -5,8 +5,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#include "keys/36.h"
-
 #define QUICK_TAP_MS 150
 #define TAPPING_TERM_MS 200
 #define PRIOR_IDLE_MS 150
@@ -24,6 +22,11 @@
 #define FN 3
 #define MEDIA 4
 #define NAV 5
+
+// Key position groups for home row mods (5-column layout = 36 keys)
+#define LEFT_KEYS 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14
+#define RIGHT_KEYS 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29
+#define THUMB_KEYS 30 31 32 33 34 35
 
 / {
     chosen {
@@ -125,7 +128,7 @@
         //│    -     │    -     │    -     │    -     │    -     │   │    -     │    -     │    -     │     -    │     -    │
         &kp C_POWER &kp C_SLEEP    _x_        _x_         _x_            _x_       &kp F1     &kp F2     &kp F3     &kp F4
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                    ___    &bootloader &sys_reset     &sys_reset &bootloader   ___     
+                                    ___    &bootloader &sys_reset     &sys_reset &bootloader   ___
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
 
             >;
