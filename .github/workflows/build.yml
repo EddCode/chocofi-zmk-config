@@ -5,7 +5,19 @@ on:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      keyboard:
+        description: 'Teclado a compilar'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - chocofi
+          - cradio
 
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    with:
+      build_matrix_path: ${{ inputs.keyboard == 'chocofi' && 'build_chocofi.yaml' || (inputs.keyboard == 'cradio' && 'build_cradio.yaml' || 'build.yaml') }}
