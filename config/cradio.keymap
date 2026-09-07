@@ -88,7 +88,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &lt FN TAB &lt SYM SPACE  &lt NUM BSPC &lt NAV ENTER
+                                           &lt FN TAB &lt SYM ENTER  &lt NUM SPACE &lt NAV BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -106,7 +106,7 @@
         //│ `        │          │          │          │          │   │  &       │  _       │  +       │  │       │  `       │
             &kp GRAVE    ___        ___        ___         ___         &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &kp GRAVE
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                              ___    &kp CAPSLOCK     &mo MEDIA  &mo NAV
+                                              ___    &kp CAPSLOCK     &mo MEDIA  &mo ESC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
